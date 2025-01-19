@@ -1,0 +1,25 @@
+def calculator():
+    while True:
+        print("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulus\n6. Exit")
+        choice = int(input("Enter your choice: "))
+        
+        if choice == 6:
+            break
+        
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+        
+        if choice == 1:
+            print(f"Result: {a + b}")
+        elif choice == 2:
+            print(f"Result: {a - b}")
+        elif choice == 3:
+            print(f"Result: {a * b}")
+        elif choice == 4:
+            print(f"Result: {a / b if b != 0 else 'Error: Division by zero'}")
+        elif choice == 5:
+            print(f"Result: {a % b}")
+        else:
+            print("Invalid choice!")
+
+calculator()
